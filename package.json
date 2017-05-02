@@ -1,0 +1,30 @@
+{
+  "name": "instant-bot",
+  "version": "0.0.1",
+  "description": "Instant bots on AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecmendenhall/instant-bot.git"
+  },
+  "author": "EC Mendenhall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ecmendenhall/instant-bot/issues"
+  },
+  "homepage": "https://github.com/ecmendenhall/instant-bot#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jest": "^19.0.2",
+    "mocha": "^3.3.0",
+    "testem": "^1.16.0"
+  },
+  "dependencies": {
+    "juration": "^0.1.0",
+    "moment": "^2.18.1",
+    "serverless": "^1.12.1"
+  }
+}
