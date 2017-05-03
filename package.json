@@ -25,6 +25,7 @@
   "dependencies": {
     "juration": "^0.1.0",
     "moment": "^2.18.1",
-    "serverless": "^1.12.1"
+    "serverless": "^1.12.1",
+    "twit": "^2.2.5"
   }
 }
