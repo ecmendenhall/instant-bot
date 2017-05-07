@@ -27,7 +27,7 @@ class MockMasto {
       return new Promise((resolve, reject) => {
         resolve({data: [
           {text: 'Some toot text', created_at: '2017-05-06T23:01:00.000Z'},
-          {text: 'Some toot text', created_at: '2017-05-06T23:02:00.000Z'},
+          {text: 'Some toot text', created_at: '2017-05-06T23:02:00.000Z'}
         ]});
       });
     case 'statuses/mentions_timeline':
