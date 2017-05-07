@@ -1,3 +1,4 @@
+require('dotenv').config();
 const Bot = require('./lib/bot');
 
 const instantBot = (config) => {
