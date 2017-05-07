@@ -1,6 +1,6 @@
 {
   "name": "instant-bot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Instant bots on AWS Lambda",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,8 @@
     "testem": "^1.16.0"
   },
   "dependencies": {
+    "dotenv": "^4.0.0",
+    "inquirer": "^3.0.6",
     "juration": "^0.1.0",
     "moment": "^2.18.1",
     "serverless": "^1.12.1",
