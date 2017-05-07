@@ -26,6 +26,7 @@
     "dotenv": "^4.0.0",
     "inquirer": "^3.0.6",
     "juration": "^0.1.0",
+    "mastodon": "^1.2.0",
     "moment": "^2.18.1",
     "serverless": "^1.12.1",
     "twit": "^2.2.5"
