@@ -26,17 +26,16 @@ class MockMasto {
     case 'timelines/home':
       return new Promise((resolve, reject) => {
         resolve({data: [
-          {text: 'Some toot text', created_at: 'Sat May 06 23:00:00 +0000 2017'},
-          {text: 'Some toot text', created_at: 'Sat May 06 23:01:00 +0000 2017'},
-          {text: 'Some toot text', created_at: 'Sat May 06 23:02:00 +0000 2017'}
+          {text: 'Some toot text', created_at: '2017-05-06T23:01:00.000Z'},
+          {text: 'Some toot text', created_at: '2017-05-06T23:02:00.000Z'},
         ]});
       });
     case 'statuses/mentions_timeline':
       return new Promise((resolve, reject) => {
         resolve({data: [
-          {text: 'Some mention text', created_at: 'Sat May 06 23:00:00 +0000 2017'},
-          {text: 'Some mention text', created_at: 'Sat May 06 23:01:00 +0000 2017'},
-          {text: 'Some mention text', created_at: 'Sat May 06 23:02:00 +0000 2017'}
+          {text: 'Some mention text', created_at: '2017-05-06T23:00:00.000Z'},
+          {text: 'Some mention text', created_at: '2017-05-06T23:01:00.000Z'},
+          {text: 'Some mention text', created_at: '2017-05-06T23:02:00.000Z'}
         ]});
       });
     case 'accounts/verify_credentials':
@@ -46,7 +45,7 @@ class MockMasto {
     case 'accounts/:id/statuses':
       return new Promise((resolve, reject) => {
         resolve({data: [
-          {text: 'Some post text', created_at: moment().subtract(2, 'minutes').format('dd MMM DD HH:mm:ss ZZ YYYY', 'en')}
+          {text: 'Some post text', created_at: moment().subtract(2, 'minutes').format('YYYY-MM-DDTHH:mm:ss.SSSZ')}
         ]});
       });
     default:
