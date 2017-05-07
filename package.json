@@ -1,6 +1,6 @@
 {
   "name": "instant-bot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Instant bots on AWS Lambda",
   "main": "index.js",
   "scripts": {

@@ -2,6 +2,8 @@
 
 'use strict';
 
+require('dotenv').config();
+
 const CLI = require('../lib/cli/cli');
 new CLI().run();
     
