@@ -3,5 +3,5 @@
 'use strict';
 
 const CLI = require('../lib/cli/cli');
-CLI.run();
+new CLI().run();
     

@@ -1,10 +1,13 @@
 {
   "name": "instant-bot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Instant bots on AWS Lambda",
   "main": "index.js",
   "scripts": {
     "test": "jest"
+  },
+  "bin": {
+    "instant-bot": "./bin/cli"
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,7 @@
     "mastodon": "^1.2.0",
     "moment": "^2.18.1",
     "serverless": "^1.12.1",
-    "twit": "^2.2.5"
+    "twit": "^2.2.5",
+    "yargs": "^8.0.1"
   }
 }
