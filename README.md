@@ -99,7 +99,7 @@ module.exports.run = () => {
 };
 ```
 
-Your instant bot is just a JS function. Call `instantBot` and pass some configuration options to create a new bot. This returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves once your bot is ready. Once your bot is initialized, you can post messages, read new messages and mentions, and access the underlying Twitter/Mastodon client todondo whatever the heck else you want. Load your favorite modules and go crazy—Instant Bot is designed to load a client and get out of your way. For all the details on what you can do with a `Bot`, see ["The Bot API"]() below.
+Your instant bot is just a JS function. Call `instantBot` and pass some configuration options to create a new bot. This returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves once your bot is ready. Once your bot is initialized, you can post messages, read new messages and mentions, and access the underlying Twitter/Mastodon client to do whatever the heck else you want. Load your favorite modules and go crazy—Instant Bot is designed to load a client and get out of your way. For all the details on what you can do with a `Bot`, see ["The Bot API"]() below.
 
 ### `handler.js`
 
