@@ -1,6 +1,6 @@
 {
   "name": "instant-bot",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Instant bots on AWS Lambda",
   "main": "index.js",
   "scripts": {
@@ -9,11 +9,20 @@
   "bin": {
     "instant-bot": "./bin/cli"
   },
+  "keywords": [
+    "serverless",
+    "twitter",
+    "mastodon",
+    "bot",
+    "lambda",
+    "aws"
+  ],
+  "homepage": "https://github.com/ecmendenhall/instant-bot",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ecmendenhall/instant-bot.git"
   },
-  "author": "EC Mendenhall",
+  "author": "EC Mendenhall <e@cmendenhall.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ecmendenhall/instant-bot/issues"
