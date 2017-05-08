@@ -1,0 +1,17 @@
+{
+  "name": "lipogram-bot",
+  "description": "Serverless template for an instant Twitter bot.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ecmendenhall/serverless-instant-bot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecmendenhall/serverless-instant-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ecmendenhall/serverless-instant-bot/issues"
+  },
+  "dependencies": {
+    "instant-bot": "^0.0.2"
+  }
+}

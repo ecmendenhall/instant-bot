@@ -1,0 +1,16 @@
+service: lipogram-bot
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+package:
+  include:
+    - .env
+    - node_modules
+
+functions:
+  runBot:
+    handler: handler.runBot
+    events:
+      - schedule: rate(1 minute)
