@@ -34,6 +34,7 @@ a lightweight wrapper around Serverless.
 A new instant bot looks something like this:
 
 ```
+$ tree lipogram-bot
 .
 ├── .env - Stores secrets like your Twitter API keys.
 ├── .gitignore - Sane defaults so you don't check in your secrets!
@@ -70,7 +71,7 @@ MASTODON_API_URL="https://oulipo.social/api/v1/"
 
 You'll need to get all these secrets from somewhere. Here's [a guide](https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html) on how to get your AWS access keys. Here's how to get [Twitter access tokens](https://dev.twitter.com/oauth/overview/application-owner-access-tokens). Here's a tool for generating your [Mastodon token](https://tinysubversions.com/notes/mastodon-bot/).
 
-*Note:* `.env.example` is just an example file! Make sure you create your own `.env` file including all the variables in `.env.example` or your bot won't work!
+**Note:** `.env.example` is just an example file! Make sure you create your own `.env` file including all the variables in `.env.example` or your bot won't work!
 
 ### `.gitignore`
 
@@ -114,7 +115,7 @@ module.exports.runBot = (event, context, callback) => {
 };
 ```
 
-*Note:* Lambda is stateless! If your bot needs persistent data, you'll have to store it somewhere else. Consider writing JSON data to S3, or saving data to a DynamoDB table.
+**Note:** Lambda is stateless! If your bot needs persistent data, you'll have to store it somewhere else. Consider writing JSON data to S3, or saving data to a DynamoDB table.
 
 ### `package.json`
 
@@ -124,7 +125,7 @@ NPM looks in here for your project's dependencies. Make sure `instant-bot` is in
 $ npm install --save <package-name>
 ```
 
-*Note:* When Serverless deploys your bot to AWS Lambda, it zips up and uploads your bot's project directory—including its `node_modules`! If you add a new dependency, make sure to install
+**Note:** When Serverless deploys your bot to AWS Lambda, it zips up and uploads your bot's project directory—including its `node_modules`! If you add a new dependency, make sure to install
 it with `npm install` before deploying your bot! Lamda won't run `npm install` when it deploys your bot—it's up to you to run it locally!
 
 ### `serverless.yml`
