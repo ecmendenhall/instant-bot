@@ -1,6 +1,8 @@
 # Instant Bot
 [![Build Status](https://travis-ci.org/ecmendenhall/instant-bot.svg?branch=master)](https://travis-ci.org/ecmendenhall/instant-bot) [![npm version](https://badge.fury.io/js/instant-bot.svg)](https://badge.fury.io/js/instant-bot)
 
+![Instant Bot Logo](https://raw.githubusercontent.com/ecmendenhall/instant-bot/master/assets/instantbot.png)
+
 Instant bot is a command-line tool and lightweight framework for building Twitter/Mastodon bots that run on AWS Lambda. It provides two tools: a CLI that wraps [Serverless Framework](https://serverless.com/) to create and deploy your bot, and a lightweight library that handles setting up your bot and configuring a Twitter/Mastodon client. The goal is to provide just enough framework to get up, running,
 and out of the way so you can use Node and Serverless to build cool bots without worrying about the servers that run them.
 
@@ -86,11 +88,11 @@ module.exports.run = () => {
 
   instantBot({service: 'twitter'}).then((bot) => {
     bot.post('Hola from lipogram bot!');
-    bot.messages.filter(m => !m.text.includes('e')).map((message) => { 
+    bot.messages.filter(m => !m.text.includes('e')).map((message) => {
       bot.service.client.post('statuses/retweet/:id', {id: message.id_str})
     });
   });
-  
+
 };
 ```
 
@@ -173,15 +175,15 @@ Options:
 
 ### The `Bot` object
 
-When your bot spins up, it loads some useful data: 
+When your bot spins up, it loads some useful data:
 
 Attributes:
 - `bot.messages`: an array of new messages from users your bot follows.
-- `bot.mentions`: an array of new messages that mention your bot. 
+- `bot.mentions`: an array of new messages that mention your bot.
 - `bot.recentPosts`: an array containing the last few messages your bot posted.
 
 Your bot keeps track of the last time it ran, so these only load new messages and mentions. Each of
-these arrays contains 
+these arrays contains
 
 The `Bot` object also provides a convenience method for posting a new message. This is super simple
 right now:
