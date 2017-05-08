@@ -156,6 +156,8 @@ events, like HTTP requests or SNS messages. You have the full power of Serverles
 
 That's it! If your bot is complex, you'll probably want to create and `require` your own modules. If it's simple, you can open `bot.js` and start hacking!
 
+You can see this whole example [here](https://github.com/ecmendenhall/instant-bot/tree/master/examples/lipogram-bot).
+
 ## The Bot API
 
 ### Configuration
