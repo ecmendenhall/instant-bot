@@ -235,6 +235,11 @@ $ instant-bot remove
 
 (This delegates to `serverless remove`. Get the picture? :smile_cat:)
 
+## More Resources
+- [Serverless Framework documentation](https://serverless.com/framework/docs/)
+- [Twit documentation](https://github.com/ttezel/twit)
+- [node-mastodon documentation](https://github.com/jessicahayley/node-mastodon)
+
 ## Contributions
 Are welcome! Open an issue or send a pull request.
 
