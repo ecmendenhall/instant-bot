@@ -6,9 +6,6 @@
 Instant bot is a command-line tool and lightweight framework for building Twitter/Mastodon bots that run on AWS Lambda. It provides two tools: a CLI that wraps [Serverless Framework](https://serverless.com/) to create and deploy your bot, and a lightweight library that handles setting up your bot and configuring a Twitter/Mastodon client. The goal is to provide just enough framework to get up, running,
 and out of the way so you can use Node and Serverless to build cool bots without worrying about the servers that run them.
 
-<iframe src="https://player.vimeo.com/video/216609842" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/216609842">Instant Bot</a> from <a href="https://vimeo.com/user4076267">E.C. Mendenhall</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
 :warning: :rotating_light: **Warning:** This project is still in development, and APIs may break at any time! :rotating_light: :warning:
 
 ## Installation
