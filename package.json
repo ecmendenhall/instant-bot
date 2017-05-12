@@ -17,7 +17,7 @@
     "lambda",
     "aws"
   ],
-  "homepage": "https://github.com/ecmendenhall/instant-bot",
+  "homepage": "https://github.com/ecmendenhall/instant-bot#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ecmendenhall/instant-bot.git"
@@ -27,19 +27,22 @@
   "bugs": {
     "url": "https://github.com/ecmendenhall/instant-bot/issues"
   },
-  "homepage": "https://github.com/ecmendenhall/instant-bot#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "jest": "^19.0.2",
     "mocha": "^3.3.0",
+    "supertest": "^3.0.0",
     "testem": "^1.16.0"
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "dotenv": "^4.0.0",
+    "express": "^4.15.2",
     "inquirer": "^3.0.6",
     "juration": "^0.1.0",
     "mastodon": "^1.2.0",
     "moment": "^2.18.1",
+    "node-schedule": "^1.2.1",
     "serverless": "^1.12.1",
     "twit": "^2.2.5",
     "yargs": "^8.0.1"
