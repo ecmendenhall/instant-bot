@@ -22,6 +22,13 @@ class MockTwit {
   get(path, options) {
     this.getPath = path;
     this.getOptions = options;
+    if (this.raiseErrors) {
+      if(path.includes('statuses')) {
+        return new Promise((resolve, reject) => {
+          resolve({errors: ['Error 1', 'Error 2']});
+        });
+      }
+    }
     switch(path) {
     case 'statuses/home_timeline':
       return new Promise((resolve, reject) => {
