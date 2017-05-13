@@ -48,7 +48,7 @@ class MockTwit {
       });
     case 'account/verify_credentials':
       return new Promise((resolve, reject) => {
-        resolve({data: {id: 123}});
+        resolve({data: {id_str: '123'}});
       });
     case 'statuses/user_timeline':
       return new Promise((resolve, reject) => {
