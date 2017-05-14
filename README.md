@@ -1,5 +1,7 @@
 # Instant Bot
-[![Build Status](https://travis-ci.org/ecmendenhall/instant-bot.svg?branch=master)](https://travis-ci.org/ecmendenhall/instant-bot) [![npm version](https://badge.fury.io/js/instant-bot.svg)](https://badge.fury.io/js/instant-bot)
+[![Build Status](https://travis-ci.org/ecmendenhall/instant-bot.svg?branch=master)](https://travis-ci.org/ecmendenhall/instant-bot) [![npm version](https://badge.fury.io/js/instant-bot.svg)](https://badge.fury.io/js/instant-bot) 
+
+[<img alt="Remix on Glitch" width="200" src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" />](https://glitch.com/edit/#!/remix/instant-bot-template-twitter)
 
 ![Instant Bot Logo](https://raw.githubusercontent.com/ecmendenhall/instant-bot/master/assets/instantbot.png)
 
@@ -26,8 +28,13 @@ If you want to deploy to Lambda, you'll also need an [AWS account](https://aws.a
 
 To create an Instant Bot on Glitch, you don't need the `instant-bot` CLI. Instead, just click one of the buttons below:
 
-- **Twitter:** [![Remix on Glitch](https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/instant-bot-template-twitter)
-- **Mastodon:** [![Remix on Glitch](https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/instant-bot-template-mastodon)
+**Twitter:** 
+
+[<img alt="Remix on Glitch" width="200" src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" />](https://glitch.com/edit/#!/remix/instant-bot-template-twitter)
+
+**Mastodon:** 
+
+[<img alt="Remix on Glitch" width="200" src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" />](https://glitch.com/edit/#!/remix/instant-bot-template-mastodon)
 
 ### Anatomy of your Instant Bot
 
