@@ -18,7 +18,11 @@ Instant Bot is an [npm package](https://www.npmjs.com/package/instant-bot). Inst
 $ npm install -g instant-bot
 ```
 You'll need an account for your bot on [Twitter](https://twitter.com/) or [Mastodon](https://mastodon.social/about).
-If you want to deploy to Lambda, you'll also need an [AWS account](https://aws.amazon.com/). 
+If you want to deploy to Lambda, you'll also need an [AWS account](https://aws.amazon.com/).
+
+## Getting Started
+
+If you're using Glitch, start [here](#instant-bots-on-glitch). If you're using Lambda, start [here](#instant-bots-on-aws-lambda).
 
 ## Instant Bots on Glitch
 
@@ -98,7 +102,7 @@ instantBot({service: 'twitter'}, (bot) => {
 
 ```
 
-Your instant bot is just a JS function. Call `instantBot` with some configuration options and pass in a function to create a new bot. Once your bot is initialized, you can post messages, read new messages and mentions, and access the underlying Twitter/Mastodon client to do whatever the heck else you want. Load your favorite modules and go crazy—Instant Bot is designed to load a client and get out of your way. For all the details on what you can do with a `Bot`, see ["The Bot API"]() below.
+Your instant bot is just a JS function. Call `instantBot` with some configuration options and pass in a function to create a new bot. Once your bot is initialized, you can post messages, read new messages and mentions, and access the underlying Twitter/Mastodon client to do whatever the heck else you want. Load your favorite modules and go crazy—Instant Bot is designed to load a client and get out of your way. For all the details on what you can do with a `Bot`, see ["The Bot API"](#the-bot-api) below.
 
 #### `package.json`
 
@@ -197,7 +201,7 @@ module.exports.run = () => {
 };
 ```
 
-Your instant bot is just a JS function. Call `instantBot` with some configuration options and pass a function to create a new bot. Once your bot is initialized, you can post messages, read new messages and mentions, and access the underlying Twitter/Mastodon client to do whatever the heck else you want. Load your favorite modules and go crazy—Instant Bot is designed to load a client and get out of your way. For all the details on what you can do with a `Bot`, see ["The Bot API"]() below.
+Your instant bot is just a JS function. Call `instantBot` with some configuration options and pass a function to create a new bot. Once your bot is initialized, you can post messages, read new messages and mentions, and access the underlying Twitter/Mastodon client to do whatever the heck else you want. Load your favorite modules and go crazy—Instant Bot is designed to load a client and get out of your way. For all the details on what you can do with a `Bot`, see ["The Bot API"](#the-bot-api) below.
 
 #### `handler.js`
 
