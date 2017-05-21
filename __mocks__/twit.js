@@ -14,6 +14,10 @@ class MockTwit {
       return new Promise((resolve, reject) => {
         resolve({id: 1});
       });
+    case 'media/upload':
+      return new Promise((resolve, reject) => {
+        resolve({data: {media_id_string: '1'}});
+      });
     default:
       break;
     }

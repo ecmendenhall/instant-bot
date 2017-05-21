@@ -1,6 +1,6 @@
 {
   "name": "instant-bot",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Instant bots on Glitch and AWS Lambda",
   "main": "index.js",
   "scripts": {

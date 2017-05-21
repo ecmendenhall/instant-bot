@@ -14,6 +14,10 @@ class MockMasto {
       return new Promise((resolve, reject) => {
         resolve({id: 1});
       });
+    case 'media':
+      return new Promise((resolve, reject) => {
+        resolve({data: {id: 1}});
+      });
     default:
       break;
     }
