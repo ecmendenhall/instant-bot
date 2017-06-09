@@ -1,5 +1,5 @@
 # Instant Bot
-[![Build Status](https://travis-ci.org/ecmendenhall/instant-bot.svg?branch=master)](https://travis-ci.org/ecmendenhall/instant-bot) [![npm version](https://badge.fury.io/js/instant-bot.svg)](https://badge.fury.io/js/instant-bot) 
+[![Build Status](https://travis-ci.org/ecmendenhall/instant-bot.svg?branch=master)](https://travis-ci.org/ecmendenhall/instant-bot) [![npm version](https://badge.fury.io/js/instant-bot.svg)](https://badge.fury.io/js/instant-bot)
 
 [<img alt="Remix on Glitch" width="200" src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" />](https://glitch.com/edit/#!/remix/instant-bot-template-twitter)
 
@@ -26,17 +26,17 @@ If you're using Glitch, start [here](#instant-bots-on-glitch). If you're using L
 
 ## Instant Bots on Glitch
 
-[Glitch](https://glitch.com/) is a very cool platform for instantly running and remixing Node applications. 
+[Glitch](https://glitch.com/) is a very cool platform for instantly running and remixing Node applications.
 
 ## Creating an Instant Bot
 
 To create an Instant Bot on Glitch, you don't need the `instant-bot` CLI. Instead, just click one of the buttons below:
 
-**Twitter:** 
+**Twitter:**
 
 [<img alt="Remix on Glitch" width="200" src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" />](https://glitch.com/edit/#!/remix/instant-bot-template-twitter)
 
-**Mastodon:** 
+**Mastodon:**
 
 [<img alt="Remix on Glitch" width="200" src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" />](https://glitch.com/edit/#!/remix/instant-bot-template-mastodon)
 
@@ -51,6 +51,7 @@ $ tree lipogram-bot
 ├── .gitignore - Sane defaults so you don't check in your secrets!
 ├── bot.js - Where your bot code should live.
 ├── package.json - Dependencies, including the instant-bot library.
+├── README.md - A markdown file describing your bot.
 ```
 
 
@@ -107,6 +108,14 @@ Your instant bot is just a JS function. Call `instantBot` with some configuratio
 #### `package.json`
 
 NPM looks in here for your project's dependencies. Make sure `instant-bot` is in here under the "dependencies" section. To add new stuff, run:
+
+```
+$ npm install --save <package-name>
+```
+
+#### `README.md`
+
+If you include a `README.md` file in your project root, Glitch will serve it at your project's base URL. Link here from your bot's Twitter description!
 
 ```
 $ npm install --save <package-name>
@@ -349,6 +358,9 @@ abstraction is intentionally leaky: use the client library to do the really comp
 
 ## Contributions
 Are welcome! Open an issue or send a pull request.
+
+## Contributors
+Thanks to [mekaseymour](https://github.com/mekaseymour) for pairing on Glitch README pages.
 
 ## License
 This project is released under an MIT license. See LICENSE.txt if you want to read one.
