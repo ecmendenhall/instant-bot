@@ -1,6 +1,6 @@
 {
   "name": "instant-bot",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Instant bots on Glitch and AWS Lambda",
   "main": "index.js",
   "scripts": {
@@ -40,6 +40,7 @@
     "express": "^4.15.2",
     "inquirer": "^3.0.6",
     "juration": "^0.1.0",
+    "marked": "^0.3.6",
     "mastodon": "^1.2.0",
     "moment": "^2.18.1",
     "node-schedule": "^1.2.1",
