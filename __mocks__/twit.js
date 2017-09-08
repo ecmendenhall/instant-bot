@@ -18,6 +18,10 @@ class MockTwit {
       return new Promise((resolve, reject) => {
         resolve({data: {media_id_string: '1'}});
       });
+    case 'statuses/retweet/:id':
+      return new Promise((resolve, reject) => {
+        resolve({id: 1});
+      });
     default:
       break;
     }
